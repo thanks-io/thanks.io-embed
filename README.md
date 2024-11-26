@@ -1,6 +1,6 @@
 # thanks.io - Embed Widget
 
-[thanks.io](https://www.thanks.io) makes it easy to send direct mail programmatically.  This embed widget makes it easy to integrate your CRM with thanks.io and give your clients that ability to send direct mail with minimal effort.  For more custom integrations please visit [https://api-docs.thanks.io/](https://api-docs.thanks.io/) for more info.
+[thanks.io](https://www.thanks.io) makes it easy to send direct mail programmatically.  This embed widget makes it easy to integrate your CRM with thanks.io and give your clients the ability to send direct mail with minimal effort.  For more custom integrations please visit [https://api-docs.thanks.io/](https://api-docs.thanks.io/) for more info.
 
 `ThanksIOClient` provides OAuth-based authentication, recipient management, and a modal interface for sending postcards.  
 
@@ -12,7 +12,7 @@
 
 ## API Mode
 
-Before testing your integreation make sure you put your account into `API Mode` so no actual cards are sent.  This setting can be turned on at [https://dashboard.thanks.io/profile/billing](https://dashboard.thanks.io/profile/billing)
+Before testing your integreation make sure you put your account into `API Mode` so no actual mail is sent.  This setting can be turned on at [https://dashboard.thanks.io/profile/billing](https://dashboard.thanks.io/profile/billing)
 
 ## Installation
 
