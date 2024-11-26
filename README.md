@@ -1,6 +1,18 @@
-# CRM Integration Documentation
+# thanks.io - Embed Widget
 
-The `ThanksIOClient` is a widget designed to help CRM users send customized postcards through Thanks.io's API. This client provides OAuth-based authentication, recipient management, and a modal interface for sending postcards.
+[thanks.io](https://www.thanks.io) makes it easy to send direct mail programmatically.  This embed widget makes it easy to integrate your CRM with thanks.io and give your clients that ability to send direct mail with minimal effort.  For more custom integrations please visit [https://api-docs.thanks.io/](https://api-docs.thanks.io/) for more info.
+
+`ThanksIOClient` provides OAuth-based authentication, recipient management, and a modal interface for sending postcards.  
+
+---
+
+## Example
+
+[https://dashboard.thanks.io/embed_example](https://dashboard.thanks.io/embed_example) provides an example of how to use this widget.
+
+## API Mode
+
+Before testing your integreation make sure you put your account into `API Mode` so no actual cards are sent.  This setting can be turned on at [https://dashboard.thanks.io/profile/billing](https://dashboard.thanks.io/profile/billing)
 
 ## Installation
 
@@ -14,8 +26,9 @@ To get started, initialize the `ThanksIOClient` in your JavaScript code:
 const thanksIOClient = new ThanksIOClient('{clientId}', '{clientSecret}', '{clientRedirectUrl}');
 ```
 
-Methods
--------
+---
+
+## Methods
 
 The `ThanksIOClient` provides various methods to set options, manage recipients, handle OAuth, and initialize the modal interface for sending postcards.
 
@@ -164,8 +177,9 @@ thanksIOClient.isValidToken().then((response) => {
 });
 ```
 
-Example Usage
--------------
+---
+
+## Example Usage
 
 Here’s a full example showing how to initialize and use the `ThanksIOClient`:
 
