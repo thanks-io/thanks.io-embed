@@ -10,6 +10,8 @@
 
 [https://dashboard.thanks.io/embed_example](https://dashboard.thanks.io/embed_example) provides an example of how to use this widget.
 
+![Embed Example](embed-example.jpg "Example of Embed Modal")
+
 ## API Mode
 
 Before testing your integreation make sure you put your account into `API Mode` so no actual mail is sent.  This setting can be turned on at [https://dashboard.thanks.io/profile/billing](https://dashboard.thanks.io/profile/billing)
