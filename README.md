@@ -4,6 +4,11 @@
 
 `ThanksIOClient` provides OAuth-based authentication, recipient management, and a modal interface for sending postcards.  
 
+The `ThanksIOClient` client can be used in automation mode.  The client
+will return a URL instead of making the call in real time.  By making a
+GET on this returned URL at a later point in time the send will be made at that
+point.  This is ideal for usage with campaigns and staggered sends.
+
 ---
 
 ## Example
@@ -16,10 +21,6 @@
 
 Before testing your integreation make sure you put your account into `API Mode` so no actual mail is sent.  This setting can be turned on at [https://dashboard.thanks.io/profile/billing](https://dashboard.thanks.io/profile/billing)
 
-The `ThanksIOClient` client can be used in automation mode.  The client
-will return a URL instead of making the call in real time.  By making a
-GET on this returned URL at a later point in time the send will be made at that
-point.  This is ideal for usage with campaigns and staggered sends.
 
 ## Installation
 
