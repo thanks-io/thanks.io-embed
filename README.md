@@ -2,11 +2,16 @@
 
 The `ThanksIOClient` is a widget designed to help CRM users send customized postcards through Thanks.io's API. This client provides OAuth-based authentication, recipient management, and a modal interface for sending postcards.
 
+The `ThanksIOClient` client can be used in automation mode.  The client
+will return a URL instead of making the call in real time.  By making a
+GET on this returned URL at a later point in time the send will be made at that
+point.  This is ideal for usage with campaigns and staggered sends.
+
 ## Installation
 
 Import thanksio javascript using script tag.
 ```html
-<script src="https://cdn.thanks.io/thanks.io-embed/1.0.1/widget.js"></script>
+<script src="https://cdn.thanks.io/thanks.io-embed/1.0.3/widget.js"></script>
 ```
 
 To get started, initialize the `ThanksIOClient` in your JavaScript code:
@@ -30,14 +35,16 @@ The `setOptions` method customizes client behavior. Currently, it supports the `
 
 ```javascript
 thanksIOClient.setOptions({
-  logs: false
+  logs: true,
+  stored_send_callback: false,
 });
 ```
 
 #### Parameters
 
 - **options** (Object): Object containing configuration options.
-  - `logs` (boolean): Enables (`true`) or disables (`false`) error tracking and logging. By default, this is set to `true` to facilitate debugging by tracking unexpected errors.
+  - `logs` (boolean) (Default: `true`): Enables (`true`) or disables (`false`) error tracking and logging. By default, this is set to `true` to facilitate debugging by tracking unexpected errors.
+  - `stored_send_callback` (boolean) (Default: `false`): Set this option to `true` to enable automation mode.  
 
 ### 2\. oAuth
 
